@@ -13,7 +13,7 @@
   },
   {
     "name": "ae.sft",
-    "url": "https://civitai.com/api/download/models/711305",
+    "url": "https://civitai.com/api/download/models/711305?token=0eefd2ffa4046dc022bbe9f5adf8b52c",
     "path": "models/vae",
     "fetch_type": "download"
   },
