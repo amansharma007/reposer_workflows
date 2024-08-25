@@ -14,7 +14,7 @@
   {
     "name": "ae.sft",
     "url": "https://civitai.com/api/download/models/711305",
-    "path": "models/VAE",
+    "path": "models/vae",
     "fetch_type": "download"
   },
   {
