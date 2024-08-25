@@ -12,7 +12,7 @@
     "fetch_type": "download"
   },
   {
-    "name": "ae.safetensors",
+    "name": "ae.sft",
     "url": "https://civitai.com/api/download/models/711305",
     "path": "models/vae",
     "fetch_type": "download"
