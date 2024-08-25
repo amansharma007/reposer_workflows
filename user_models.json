@@ -1,10 +1,32 @@
-
 [
   {
     "name": "v1-5-pruned-emaonly.ckpt",
     "url": "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt",
     "path": "models/checkpoints",
     "fetch_type": "download"
+  },
+  {
+    "name": "flux1-dev-fp8.safetensors",
+    "url": "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors",
+    "path": "",
+    "fetch_type": "download"
+  },
+  {
+    "name": "flux\\ae.sft",
+    "url": "https://civitai.com/api/download/models/711305",
+    "path": "",
+    "fetch_type": "download"
+  },
+  {
+    "name": "sd3\\t5xxl_fp8_e4m3fn.safetensors",
+    "url": "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors",
+    "path": "",
+    "fetch_type": "download"
+  },
+  {
+    "name": "sd3\\clip_l.safetensors",
+    "url": "https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors",
+    "path": "",
+    "fetch_type": "download"
   }
 ]
-      
