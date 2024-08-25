@@ -4,3 +4,8 @@ custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
 workflows: []
+normal_workflows:
+  - id: zwhj0zr18y
+    name: anime_art.json
+    file: anime/anime_art.json
+    version: 0
