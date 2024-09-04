@@ -13,3 +13,7 @@ normal_workflows:
     name: photo_reimaging.json
     file: my_workflows/photo_reimaging.json
     version: 0
+  - id: 4fgj53kyqmy
+    name: reposer_workflow.json
+    file: my_workflows/reposer_workflow.json
+    version: 0
