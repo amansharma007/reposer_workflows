@@ -1,6 +1,6 @@
 {
-    "last_node_id": 303,
-    "last_link_id": 1315,
+    "last_node_id": 304,
+    "last_link_id": 1317,
     "nodes": [
         {
             "id": 16,
@@ -32,7 +32,8 @@
                     "name": "CLIP",
                     "type": "CLIP",
                     "links": [
-                        1314
+                        1314,
+                        1317
                     ],
                     "slot_index": 1,
                     "shape": 3
@@ -50,7 +51,7 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                "SD1.5/realcartoon3d_v15.safetensors"
+                null
             ],
             "color": "#323",
             "bgcolor": "#535",
@@ -1276,145 +1277,6 @@
             "bgcolor": "#000"
         },
         {
-            "id": 270,
-            "type": "DetailerForEachDebug",
-            "pos": [
-                2037,
-                1120
-            ],
-            "size": {
-                "0": 337.6000061035156,
-                "1": 620
-            },
-            "flags": {
-                "pinned": false
-            },
-            "order": 40,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": 1232,
-                    "slot_index": 0
-                },
-                {
-                    "name": "segs",
-                    "type": "SEGS",
-                    "link": 1315
-                },
-                {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 1304,
-                    "slot_index": 2
-                },
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": null,
-                    "slot_index": 3
-                },
-                {
-                    "name": "vae",
-                    "type": "VAE",
-                    "link": null,
-                    "slot_index": 4
-                },
-                {
-                    "name": "positive",
-                    "type": "CONDITIONING",
-                    "link": 1222,
-                    "slot_index": 5
-                },
-                {
-                    "name": "negative",
-                    "type": "CONDITIONING",
-                    "link": 1309,
-                    "slot_index": 6
-                },
-                {
-                    "name": "detailer_hook",
-                    "type": "DETAILER_HOOK",
-                    "link": null
-                },
-                {
-                    "name": "scheduler_func_opt",
-                    "type": "SCHEDULER_FUNC",
-                    "link": null
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "links": [
-                        1228
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                },
-                {
-                    "name": "cropped",
-                    "type": "IMAGE",
-                    "links": [
-                        1223
-                    ],
-                    "slot_index": 1,
-                    "shape": 6
-                },
-                {
-                    "name": "cropped_refined",
-                    "type": "IMAGE",
-                    "links": [
-                        1224
-                    ],
-                    "slot_index": 2,
-                    "shape": 6
-                },
-                {
-                    "name": "cropped_refined_alpha",
-                    "type": "IMAGE",
-                    "links": [
-                        1225
-                    ],
-                    "slot_index": 3,
-                    "shape": 6
-                },
-                {
-                    "name": "cnet_images",
-                    "type": "IMAGE",
-                    "links": null,
-                    "shape": 6
-                }
-            ],
-            "title": "DetailerDebug (SEGS) (Face Upscale)",
-            "properties": {
-                "Node name for S&R": "DetailerForEachDebug"
-            },
-            "widgets_values": [
-                1024,
-                false,
-                1024,
-                329293744560011,
-                "randomize",
-                16,
-                8.5,
-                "ddpm",
-                "karras",
-                0.3,
-                6,
-                true,
-                true,
-                "",
-                1,
-                false,
-                20
-            ],
-            "color": "#432",
-            "bgcolor": "#653"
-        },
-        {
             "id": 253,
             "type": "KSamplerAdvanced",
             "pos": [
@@ -1623,44 +1485,6 @@
             "bgcolor": "#593930"
         },
         {
-            "id": 156,
-            "type": "ControlNetLoader",
-            "pos": [
-                2,
-                -100
-            ],
-            "size": {
-                "0": 400,
-                "1": 60
-            },
-            "flags": {
-                "pinned": false
-            },
-            "order": 11,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "CONTROL_NET",
-                    "type": "CONTROL_NET",
-                    "links": [
-                        1311
-                    ],
-                    "shape": 3,
-                    "slot_index": 0
-                }
-            ],
-            "title": "Load ControlNet (SD 1.5 OpenPose)",
-            "properties": {
-                "Node name for S&R": "ControlNetLoader"
-            },
-            "widgets_values": [
-                "sd15/control-lora/control_lora_rank128_v11p_sd15_openpose_fp16.safetensors"
-            ],
-            "color": "#323",
-            "bgcolor": "#535",
-            "shape": 4
-        },
-        {
             "id": 291,
             "type": "CR Model Input Switch",
             "pos": [
@@ -1672,7 +1496,7 @@
                 "1": 80
             },
             "flags": {},
-            "order": 12,
+            "order": 11,
             "mode": 0,
             "inputs": [
                 {
@@ -1758,44 +1582,6 @@
             ],
             "color": "#9b80cc",
             "bgcolor": "#876cb8"
-        },
-        {
-            "id": 8,
-            "type": "VAELoader",
-            "pos": [
-                1.721053380006543,
-                -200.22666103183582
-            ],
-            "size": {
-                "0": 400,
-                "1": 60
-            },
-            "flags": {
-                "collapsed": false,
-                "pinned": false
-            },
-            "order": 13,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "VAE",
-                    "type": "VAE",
-                    "links": [
-                        1313
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "VAELoader"
-            },
-            "widgets_values": [
-                "vae-ft-mse-840000-ema-pruned.ckpt"
-            ],
-            "color": "#323",
-            "bgcolor": "#535",
-            "shape": 4
         },
         {
             "id": 297,
@@ -1925,7 +1711,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 14,
+            "order": 12,
             "mode": 0,
             "outputs": [
                 {
@@ -2061,6 +1847,222 @@
             },
             "color": "#2a363b",
             "bgcolor": "#3f5159"
+        },
+        {
+            "id": 156,
+            "type": "ControlNetLoader",
+            "pos": [
+                21,
+                -100
+            ],
+            "size": {
+                "0": 400,
+                "1": 60
+            },
+            "flags": {
+                "pinned": false
+            },
+            "order": 13,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "CONTROL_NET",
+                    "type": "CONTROL_NET",
+                    "links": [
+                        1311
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "title": "Load ControlNet (SD 1.5 OpenPose)",
+            "properties": {
+                "Node name for S&R": "ControlNetLoader"
+            },
+            "widgets_values": [
+                "sd15/control-lora/control_lora_rank128_v11p_sd15_openpose_fp16.safetensors"
+            ],
+            "color": "#323",
+            "bgcolor": "#535",
+            "shape": 4
+        },
+        {
+            "id": 8,
+            "type": "VAELoader",
+            "pos": [
+                24,
+                -205
+            ],
+            "size": {
+                "0": 400,
+                "1": 60
+            },
+            "flags": {
+                "collapsed": false,
+                "pinned": false
+            },
+            "order": 14,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                        1313,
+                        1316
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "VAELoader"
+            },
+            "widgets_values": [
+                "vae-ft-mse-840000-ema-pruned.ckpt"
+            ],
+            "color": "#323",
+            "bgcolor": "#535",
+            "shape": 4
+        },
+        {
+            "id": 270,
+            "type": "DetailerForEachDebug",
+            "pos": [
+                2059,
+                1136
+            ],
+            "size": {
+                "0": 337.6000061035156,
+                "1": 620
+            },
+            "flags": {
+                "pinned": false
+            },
+            "order": 40,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 1232,
+                    "slot_index": 0
+                },
+                {
+                    "name": "segs",
+                    "type": "SEGS",
+                    "link": 1315
+                },
+                {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 1304,
+                    "slot_index": 2
+                },
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 1317,
+                    "slot_index": 3
+                },
+                {
+                    "name": "vae",
+                    "type": "VAE",
+                    "link": 1316,
+                    "slot_index": 4
+                },
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 1222,
+                    "slot_index": 5
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 1309,
+                    "slot_index": 6
+                },
+                {
+                    "name": "detailer_hook",
+                    "type": "DETAILER_HOOK",
+                    "link": null
+                },
+                {
+                    "name": "scheduler_func_opt",
+                    "type": "SCHEDULER_FUNC",
+                    "link": null
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "links": [
+                        1228
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                },
+                {
+                    "name": "cropped",
+                    "type": "IMAGE",
+                    "links": [
+                        1223
+                    ],
+                    "slot_index": 1,
+                    "shape": 6
+                },
+                {
+                    "name": "cropped_refined",
+                    "type": "IMAGE",
+                    "links": [
+                        1224
+                    ],
+                    "slot_index": 2,
+                    "shape": 6
+                },
+                {
+                    "name": "cropped_refined_alpha",
+                    "type": "IMAGE",
+                    "links": [
+                        1225
+                    ],
+                    "slot_index": 3,
+                    "shape": 6
+                },
+                {
+                    "name": "cnet_images",
+                    "type": "IMAGE",
+                    "links": null,
+                    "shape": 6
+                }
+            ],
+            "title": "DetailerDebug (SEGS) (Face Upscale)",
+            "properties": {
+                "Node name for S&R": "DetailerForEachDebug"
+            },
+            "widgets_values": [
+                1024,
+                false,
+                1024,
+                329293744560011,
+                "randomize",
+                16,
+                8.5,
+                "ddpm",
+                "karras",
+                0.3,
+                6,
+                true,
+                true,
+                "",
+                1,
+                false,
+                20
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
         }
     ],
     "links": [
@@ -3119,6 +3121,22 @@
             270,
             1,
             "SEGS"
+        ],
+        [
+            1316,
+            8,
+            0,
+            270,
+            4,
+            "VAE"
+        ],
+        [
+            1317,
+            16,
+            1,
+            270,
+            3,
+            "CLIP"
         ]
     ],
     "groups": [
@@ -3192,10 +3210,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.7513148009015779,
+            "scale": 0.1978446689001351,
             "offset": [
-                172.05315156024224,
-                540.0951164476165
+                969.566237219641,
+                955.7631946638757
             ]
         }
     },
