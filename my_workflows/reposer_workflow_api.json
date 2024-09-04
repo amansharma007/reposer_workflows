@@ -6,9 +6,7 @@
         "class_type": "VAELoader"
     },
     "16": {
-        "inputs": {
-            "ckpt_name": "SD1.5/realcartoon3d_v15.safetensors"
-        },
+        "inputs": {},
         "class_type": "CheckpointLoaderSimple"
     },
     "18": {
@@ -327,6 +325,14 @@
             ],
             "model": [
                 "252",
+                0
+            ],
+            "clip": [
+                "16",
+                1
+            ],
+            "vae": [
+                "8",
                 0
             ],
             "positive": [
