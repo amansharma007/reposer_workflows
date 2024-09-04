@@ -3,7 +3,15 @@ models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
 user_custom_nodes: user_custom_nodes.json
-workflows: []
+workflows:
+  - id: oivp5xq3b4n
+    name: reposer_workflow_api.json
+    file: my_workflows/reposer_workflow_api.json
+    version: 1
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: zwhj0zr18y
     name: anime_art.json
@@ -16,4 +24,4 @@ normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
     file: my_workflows/reposer_workflow.json
-    version: 0
+    version: 1
