@@ -98,5 +98,203 @@
       "Zoe_DepthAnythingPreprocessor"
     ],
     "cached": "False"
+  },
+  {
+    "name": "ComfyUI Impact Pack",
+    "url": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Dr.Lt.Data",
+      "title": "ComfyUI Impact Pack",
+      "id": "impact",
+      "reference": "https://github.com/ltdrdata/ComfyUI-Impact-Pack",
+      "files": [
+        "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+      ],
+      "install_type": "git-clone",
+      "description": "This extension offers various detector nodes and detailer nodes that allow you to configure a workflow that automatically enhances facial details. And provide iterative upscaler."
+    },
+    "nodes": [
+      "ImpactSegsAndMask",
+      "SAMLoader",
+      "UltralyticsDetectorProvider",
+      "SAMDetectorCombined",
+      "BboxDetectorSEGS",
+      "DetailerForEachDebug"
+    ],
+    "apt": [],
+    "pip": [
+      "ultralytics"
+    ],
+    "preemptions": [
+      "SAMLoader"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI_IPAdapter_plus",
+    "url": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "cubiq",
+      "title": "ComfyUI_IPAdapter_plus",
+      "id": "ipadapter",
+      "reference": "https://github.com/cubiq/ComfyUI_IPAdapter_plus",
+      "files": [
+        "https://github.com/cubiq/ComfyUI_IPAdapter_plus"
+      ],
+      "install_type": "git-clone",
+      "description": "ComfyUI reference implementation for IPAdapter models. The code is mostly taken from the original IPAdapter repository and laksjdjf's implementation, all credit goes to them. I just made the extension closer to ComfyUI philosophy."
+    },
+    "nodes": [
+      "IPAdapterModelLoader",
+      "PrepImageForClipVision",
+      "IPAdapterAdvanced"
+    ],
+    "apt": [],
+    "pip": [
+      "insightface"
+    ],
+    "preemptions": [
+      "IPAAdapterFaceIDBatch",
+      "IPAdapter",
+      "IPAdapterAdvanced",
+      "IPAdapterBatch",
+      "IPAdapterClipVisionEnhancer",
+      "IPAdapterClipVisionEnhancerBatch",
+      "IPAdapterCombineEmbeds",
+      "IPAdapterCombineParams",
+      "IPAdapterCombineWeights",
+      "IPAdapterEmbeds",
+      "IPAdapterEmbedsBatch",
+      "IPAdapterEncoder",
+      "IPAdapterFaceID",
+      "IPAdapterFromParams",
+      "IPAdapterInsightFaceLoader",
+      "IPAdapterLoadEmbeds",
+      "IPAdapterMS",
+      "IPAdapterModelLoader",
+      "IPAdapterNoise",
+      "IPAdapterPreciseComposition",
+      "IPAdapterPreciseCompositionBatch",
+      "IPAdapterPreciseStyleTransfer",
+      "IPAdapterPreciseStyleTransferBatch",
+      "IPAdapterPromptScheduleFromWeightsStrategy",
+      "IPAdapterRegionalConditioning",
+      "IPAdapterSaveEmbeds",
+      "IPAdapterStyleComposition",
+      "IPAdapterStyleCompositionBatch",
+      "IPAdapterTiled",
+      "IPAdapterTiledBatch",
+      "IPAdapterUnifiedLoader",
+      "IPAdapterUnifiedLoaderCommunity",
+      "IPAdapterUnifiedLoaderFaceID",
+      "IPAdapterWeights",
+      "IPAdapterWeightsFromStrategy",
+      "PrepImageForClipVision"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "Comfyroll Studio",
+    "url": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Suzie1",
+      "title": "Comfyroll Studio",
+      "id": "comfyroll",
+      "reference": "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes",
+      "files": [
+        "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Custom nodes for SDXL and SD1.5 including Multi-ControlNet, LoRA, Aspect Ratio, Process Switches, and many more nodes. NOTE: Maintainer is changed to Suzie1 from RockOfFire. [w/Using an outdated version has resulted in reported issues with updates not being applied. Trying to reinstall the software is advised.]"
+    },
+    "nodes": [
+      "CR Model Input Switch"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "Efficiency Nodes for ComfyUI Version 2.0+",
+    "url": "https://github.com/jags111/efficiency-nodes-comfyui",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "jags111",
+      "title": "Efficiency Nodes for ComfyUI Version 2.0+",
+      "id": "eff-nodes",
+      "reference": "https://github.com/jags111/efficiency-nodes-comfyui",
+      "files": [
+        "https://github.com/jags111/efficiency-nodes-comfyui"
+      ],
+      "install_type": "git-clone",
+      "description": "A collection of ComfyUI custom nodes to help streamline workflows and reduce total node count.[w/NOTE: This node is originally created by LucianoCirino, but the [a/original repository](https://github.com/LucianoCirino/efficiency-nodes-comfyui) is no longer maintained and has been forked by a new maintainer. To use the forked version, you should uninstall the original version and **REINSTALL** this one.]"
+    },
+    "nodes": [
+      "NNLatentUpscale",
+      "NNLatentUpscale"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Neural Network Latent Upscale",
+    "url": "https://github.com/Ttl/ComfyUi_NNLatentUpscale",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "Ttl",
+      "title": "ComfyUI Neural Network Latent Upscale",
+      "id": "nnlatent",
+      "reference": "https://github.com/Ttl/ComfyUi_NNLatentUpscale",
+      "files": [
+        "https://github.com/Ttl/ComfyUi_NNLatentUpscale"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:NNLatentUpscale, A custom ComfyUI node designed for rapid latent upscaling using a compact neural network, eliminating the need for VAE-based decoding and encoding."
+    },
+    "nodes": [
+      "NNLatentUpscale",
+      "NNLatentUpscale"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [
+      "NNLatentUpscale"
+    ],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI-YOLO",
+    "url": "https://github.com/kadirnar/ComfyUI-YOLO",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kadirnar",
+      "title": "ComfyUI-YOLO",
+      "id": "comfy-yolo",
+      "reference": "https://github.com/kadirnar/ComfyUI-YOLO",
+      "files": [
+        "https://github.com/kadirnar/ComfyUI-YOLO"
+      ],
+      "install_type": "git-clone",
+      "description": "Ultralytics-Powered Object Recognition for ComfyUI"
+    },
+    "nodes": [
+      "GetImageSize"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
