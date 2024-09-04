@@ -13,10 +13,6 @@ workflows:
     outputs: []
     skip_preprocess: true
 normal_workflows:
-  - id: zwhj0zr18y
-    name: anime_art.json
-    file: anime/anime_art.json
-    version: 0
   - id: b1viub33ejm
     name: photo_reimaging.json
     file: my_workflows/photo_reimaging.json
