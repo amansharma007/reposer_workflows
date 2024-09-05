@@ -37,7 +37,7 @@
     },
     "30": {
         "inputs": {
-            "text": "HDR photo of a woman, 1970s style African detective, cheering. In the background is her office desk and a window looking out over the New York City skyline.",
+            "text": "photo of a man posing in a street styled dress standing in the middle of a road",
             "clip": [
                 "16",
                 1
@@ -78,7 +78,7 @@
     },
     "176": {
         "inputs": {
-            "seed": 779656876261817,
+            "seed": 716788164903063,
             "steps": 16,
             "cfg": 5.6000000000000005,
             "sampler_name": "uni_pc",
@@ -178,7 +178,7 @@
     "253": {
         "inputs": {
             "add_noise": "enable",
-            "noise_seed": 504461848598100,
+            "noise_seed": 127029386594028,
             "steps": 20,
             "cfg": 5.5,
             "sampler_name": "heunpp2",
@@ -312,7 +312,7 @@
             "guide_size": 1024,
             "guide_size_for": false,
             "max_size": 1024,
-            "seed": 415694182133224,
+            "seed": 61363548717188,
             "steps": 16,
             "cfg": 8.5,
             "sampler_name": "ddpm",
@@ -440,13 +440,17 @@
     },
     "291": {
         "inputs": {
-            "Input": 2
+            "Input": 2,
+            "model2": [
+                "252",
+                0
+            ]
         },
         "class_type": "CR Model Input Switch"
     },
     "297": {
         "inputs": {
-            "seed": 1047680254875504,
+            "seed": 843484734059066,
             "steps": 14,
             "cfg": 5.5,
             "sampler_name": "dpmpp_2m",
@@ -497,6 +501,10 @@
             "samples": [
                 "297",
                 0
+            ],
+            "vae": [
+                "8",
+                0
             ]
         },
         "class_type": "VAEDecode"
@@ -505,6 +513,10 @@
         "inputs": {
             "samples": [
                 "176",
+                0
+            ],
+            "vae": [
+                "8",
                 0
             ]
         },
