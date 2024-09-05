@@ -1,6 +1,6 @@
 {
     "last_node_id": 304,
-    "last_link_id": 1317,
+    "last_link_id": 1319,
     "nodes": [
         {
             "id": 16,
@@ -33,7 +33,9 @@
                     "type": "CLIP",
                     "links": [
                         1314,
-                        1317
+                        1317,
+                        1318,
+                        1319
                     ],
                     "slot_index": 1,
                     "shape": 3
@@ -51,7 +53,7 @@
                 "Node name for S&R": "CheckpointLoaderSimple"
             },
             "widgets_values": [
-                null
+                "realcartoon3d_v15.safetensors"
             ],
             "color": "#323",
             "bgcolor": "#535",
@@ -140,48 +142,6 @@
             },
             "color": "#222",
             "bgcolor": "#000"
-        },
-        {
-            "id": 266,
-            "type": "UltralyticsDetectorProvider",
-            "pos": [
-                2167.192020486585,
-                815.8699436252507
-            ],
-            "size": {
-                "0": 315,
-                "1": 78
-            },
-            "flags": {
-                "collapsed": false
-            },
-            "order": 1,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "BBOX_DETECTOR",
-                    "type": "BBOX_DETECTOR",
-                    "links": [
-                        1216
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                },
-                {
-                    "name": "SEGM_DETECTOR",
-                    "type": "SEGM_DETECTOR",
-                    "links": null,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "UltralyticsDetectorProvider"
-            },
-            "widgets_values": [
-                "bbox/face_yolov8m.pt"
-            ],
-            "color": "#323",
-            "bgcolor": "#535"
         },
         {
             "id": 269,
@@ -373,51 +333,18 @@
             "bgcolor": "#000"
         },
         {
-            "id": 256,
-            "type": "IPAdapterModelLoader",
-            "pos": [
-                310,
-                90
-            ],
-            "size": {
-                "0": 315,
-                "1": 58
-            },
-            "flags": {},
-            "order": 2,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "IPADAPTER",
-                    "type": "IPADAPTER",
-                    "links": [
-                        1299
-                    ],
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "IPAdapterModelLoader"
-            },
-            "widgets_values": [
-                "ip-adapter-full-face_sd15.safetensors"
-            ],
-            "color": "#323",
-            "bgcolor": "#535"
-        },
-        {
             "id": 292,
             "type": "Note",
             "pos": [
-                597.9455298263756,
-                1333.087033259244
+                600,
+                1330
             ],
             "size": {
                 "0": 390,
                 "1": 140
             },
             "flags": {},
-            "order": 3,
+            "order": 1,
             "mode": 0,
             "properties": {
                 "text": ""
@@ -440,7 +367,7 @@
                 "1": 100
             },
             "flags": {},
-            "order": 4,
+            "order": 2,
             "mode": 0,
             "properties": {
                 "text": ""
@@ -450,48 +377,6 @@
             ],
             "color": "#222",
             "bgcolor": "#000"
-        },
-        {
-            "id": 263,
-            "type": "NNLatentUpscale",
-            "pos": [
-                1337.769111374751,
-                824.3686146280223
-            ],
-            "size": {
-                "0": 210,
-                "1": 82
-            },
-            "flags": {},
-            "order": 27,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "latent",
-                    "type": "LATENT",
-                    "link": 1253
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "LATENT",
-                    "type": "LATENT",
-                    "links": [
-                        1213
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "NNLatentUpscale"
-            },
-            "widgets_values": [
-                "SD 1.x",
-                1.5
-            ],
-            "color": "#a914b5",
-            "bgcolor": "#9500a1"
         },
         {
             "id": 279,
@@ -800,8 +685,8 @@
             "id": 18,
             "type": "CLIPTextEncode",
             "pos": [
-                -2.0544701736243773,
-                1423.087033259244
+                0,
+                1420
             ],
             "size": {
                 "0": 537.80615234375,
@@ -811,13 +696,13 @@
                 "collapsed": false,
                 "pinned": false
             },
-            "order": 5,
+            "order": 15,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": null
+                    "link": 1319
                 }
             ],
             "outputs": [
@@ -885,39 +770,6 @@
             "bgcolor": "#4e7a9e"
         },
         {
-            "id": 257,
-            "type": "CLIPVisionLoader",
-            "pos": [
-                310,
-                200
-            ],
-            "size": {
-                "0": 315,
-                "1": 58
-            },
-            "flags": {},
-            "order": 6,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "CLIP_VISION",
-                    "type": "CLIP_VISION",
-                    "links": [
-                        1298
-                    ],
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPVisionLoader"
-            },
-            "widgets_values": [
-                "ip_adapter_sd15/model.safetensors"
-            ],
-            "color": "#323",
-            "bgcolor": "#535"
-        },
-        {
             "id": 274,
             "type": "CLIPTextEncode",
             "pos": [
@@ -929,7 +781,7 @@
                 "1": 106.75413513183594
             },
             "flags": {},
-            "order": 15,
+            "order": 13,
             "mode": 0,
             "inputs": [
                 {
@@ -958,51 +810,6 @@
             ],
             "color": "#232",
             "bgcolor": "#353"
-        },
-        {
-            "id": 161,
-            "type": "LoadImage",
-            "pos": [
-                0,
-                340
-            ],
-            "size": {
-                "0": 368.36517333984375,
-                "1": 366.5357971191406
-            },
-            "flags": {
-                "pinned": false
-            },
-            "order": 7,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        1209
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null,
-                    "slot_index": 1,
-                    "shape": 3
-                }
-            ],
-            "title": "Load IPAdapter Image (Face)",
-            "properties": {
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "woman_81d8d14a-c5a6-4450-9e07-2c0b63dbaabb.jpeg",
-                "image"
-            ],
-            "color": "#628eb2",
-            "bgcolor": "#4e7a9e"
         },
         {
             "id": 208,
@@ -1111,55 +918,11 @@
             "bgcolor": "#3f5159"
         },
         {
-            "id": 155,
-            "type": "LoadImage",
-            "pos": [
-                -2.0544701736243773,
-                810
-            ],
-            "size": {
-                "0": 364.2013854980469,
-                "1": 353.6595764160156
-            },
-            "flags": {
-                "pinned": false
-            },
-            "order": 8,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "IMAGE",
-                    "type": "IMAGE",
-                    "links": [
-                        959
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                },
-                {
-                    "name": "MASK",
-                    "type": "MASK",
-                    "links": null,
-                    "shape": 3
-                }
-            ],
-            "title": "Load ControlNet Image (Pose)",
-            "properties": {
-                "Node name for S&R": "LoadImage"
-            },
-            "widgets_values": [
-                "pose_68be8a20-7006-44fd-82c3-2b9fb9c27a47.jpeg",
-                "image"
-            ],
-            "color": "#628eb2",
-            "bgcolor": "#4e7a9e"
-        },
-        {
             "id": 30,
             "type": "CLIPTextEncode",
             "pos": [
-                -2.0544701736243773,
-                1213.087033259244
+                0,
+                1210
             ],
             "size": {
                 "0": 539.6243286132812,
@@ -1169,13 +932,13 @@
                 "collapsed": false,
                 "pinned": false
             },
-            "order": 9,
+            "order": 14,
             "mode": 0,
             "inputs": [
                 {
                     "name": "clip",
                     "type": "CLIP",
-                    "link": null,
+                    "link": 1318,
                     "slot_index": 0
                 }
             ],
@@ -1265,7 +1028,7 @@
                 "1": 210
             },
             "flags": {},
-            "order": 10,
+            "order": 3,
             "mode": 0,
             "properties": {
                 "text": ""
@@ -1280,8 +1043,8 @@
             "id": 253,
             "type": "KSamplerAdvanced",
             "pos": [
-                977,
-                1008
+                980,
+                1010
             ],
             "size": {
                 "0": 315,
@@ -1330,7 +1093,7 @@
             },
             "widgets_values": [
                 "enable",
-                1069931404185387,
+                504461848598100,
                 "randomize",
                 20,
                 5.5,
@@ -1347,8 +1110,8 @@
             "id": 176,
             "type": "KSampler",
             "pos": [
-                1303,
-                1007
+                1300,
+                1010
             ],
             "size": {
                 "0": 300,
@@ -1400,7 +1163,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                504913919791597,
+                779656876261817,
                 "randomize",
                 16,
                 5.6000000000000005,
@@ -1412,91 +1175,18 @@
             "bgcolor": "#335"
         },
         {
-            "id": 240,
-            "type": "ControlNetApplyAdvanced",
-            "pos": [
-                849,
-                806
-            ],
-            "size": {
-                "0": 230,
-                "1": 170
-            },
-            "flags": {},
-            "order": 23,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "positive",
-                    "type": "CONDITIONING",
-                    "link": 1203
-                },
-                {
-                    "name": "negative",
-                    "type": "CONDITIONING",
-                    "link": 1128
-                },
-                {
-                    "name": "control_net",
-                    "type": "CONTROL_NET",
-                    "link": 1311
-                },
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": 1119
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "positive",
-                    "type": "CONDITIONING",
-                    "links": [
-                        1300,
-                        1305,
-                        1307,
-                        1310
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                },
-                {
-                    "name": "negative",
-                    "type": "CONDITIONING",
-                    "links": [
-                        1301,
-                        1306,
-                        1308,
-                        1309
-                    ],
-                    "slot_index": 1,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "ControlNetApplyAdvanced"
-            },
-            "widgets_values": [
-                1,
-                0,
-                1
-            ],
-            "color": "#332922",
-            "bgcolor": "#593930"
-        },
-        {
             "id": 291,
             "type": "CR Model Input Switch",
             "pos": [
-                737,
-                1211
+                740,
+                1210
             ],
             "size": {
                 "0": 210,
                 "1": 80
             },
             "flags": {},
-            "order": 11,
+            "order": 4,
             "mode": 0,
             "inputs": [
                 {
@@ -1541,8 +1231,8 @@
             "id": 252,
             "type": "FreeU_V2",
             "pos": [
-                1167,
-                102
+                1170,
+                100
             ],
             "size": {
                 "0": 210,
@@ -1639,7 +1329,7 @@
                 "Node name for S&R": "KSampler"
             },
             "widgets_values": [
-                836315368333119,
+                1047680254875504,
                 "randomize",
                 14,
                 5.5,
@@ -1711,7 +1401,7 @@
             "flags": {
                 "collapsed": false
             },
-            "order": 12,
+            "order": 5,
             "mode": 0,
             "outputs": [
                 {
@@ -1733,77 +1423,6 @@
             ],
             "color": "#323",
             "bgcolor": "#535"
-        },
-        {
-            "id": 303,
-            "type": "IPAdapterAdvanced",
-            "pos": [
-                746,
-                126
-            ],
-            "size": {
-                "0": 315,
-                "1": 278
-            },
-            "flags": {},
-            "order": 18,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "model",
-                    "type": "MODEL",
-                    "link": 1312
-                },
-                {
-                    "name": "ipadapter",
-                    "type": "IPADAPTER",
-                    "link": 1299
-                },
-                {
-                    "name": "image",
-                    "type": "IMAGE",
-                    "link": 1297
-                },
-                {
-                    "name": "image_negative",
-                    "type": "IMAGE",
-                    "link": null
-                },
-                {
-                    "name": "attn_mask",
-                    "type": "MASK",
-                    "link": null
-                },
-                {
-                    "name": "clip_vision",
-                    "type": "CLIP_VISION",
-                    "link": 1298
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "MODEL",
-                    "type": "MODEL",
-                    "links": [
-                        1296
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "IPAdapterAdvanced"
-            },
-            "widgets_values": [
-                1,
-                "linear",
-                "concat",
-                0,
-                1,
-                "V only"
-            ],
-            "color": "#332922",
-            "bgcolor": "#593930"
         },
         {
             "id": 278,
@@ -1847,83 +1466,6 @@
             },
             "color": "#2a363b",
             "bgcolor": "#3f5159"
-        },
-        {
-            "id": 156,
-            "type": "ControlNetLoader",
-            "pos": [
-                21,
-                -100
-            ],
-            "size": {
-                "0": 400,
-                "1": 60
-            },
-            "flags": {
-                "pinned": false
-            },
-            "order": 13,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "CONTROL_NET",
-                    "type": "CONTROL_NET",
-                    "links": [
-                        1311
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                }
-            ],
-            "title": "Load ControlNet (SD 1.5 OpenPose)",
-            "properties": {
-                "Node name for S&R": "ControlNetLoader"
-            },
-            "widgets_values": [
-                "sd15/control-lora/control_lora_rank128_v11p_sd15_openpose_fp16.safetensors"
-            ],
-            "color": "#323",
-            "bgcolor": "#535",
-            "shape": 4
-        },
-        {
-            "id": 8,
-            "type": "VAELoader",
-            "pos": [
-                24,
-                -205
-            ],
-            "size": {
-                "0": 400,
-                "1": 60
-            },
-            "flags": {
-                "collapsed": false,
-                "pinned": false
-            },
-            "order": 14,
-            "mode": 0,
-            "outputs": [
-                {
-                    "name": "VAE",
-                    "type": "VAE",
-                    "links": [
-                        1313,
-                        1316
-                    ],
-                    "slot_index": 0,
-                    "shape": 3
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "VAELoader"
-            },
-            "widgets_values": [
-                "vae-ft-mse-840000-ema-pruned.ckpt"
-            ],
-            "color": "#323",
-            "bgcolor": "#535",
-            "shape": 4
         },
         {
             "id": 270,
@@ -2046,7 +1588,7 @@
                 1024,
                 false,
                 1024,
-                329293744560011,
+                415694182133224,
                 "randomize",
                 16,
                 8.5,
@@ -2063,6 +1605,466 @@
             ],
             "color": "#432",
             "bgcolor": "#653"
+        },
+        {
+            "id": 266,
+            "type": "UltralyticsDetectorProvider",
+            "pos": [
+                2167.192020486585,
+                815.8699436252507
+            ],
+            "size": {
+                "0": 315,
+                "1": 78
+            },
+            "flags": {
+                "collapsed": false
+            },
+            "order": 6,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "BBOX_DETECTOR",
+                    "type": "BBOX_DETECTOR",
+                    "links": [
+                        1216
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                },
+                {
+                    "name": "SEGM_DETECTOR",
+                    "type": "SEGM_DETECTOR",
+                    "links": null,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "UltralyticsDetectorProvider"
+            },
+            "widgets_values": [
+                "bbox/face_yolov8m.pt"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 256,
+            "type": "IPAdapterModelLoader",
+            "pos": [
+                310,
+                90
+            ],
+            "size": {
+                "0": 433.26275634765625,
+                "1": 58
+            },
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "IPADAPTER",
+                    "type": "IPADAPTER",
+                    "links": [
+                        1299
+                    ],
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "IPAdapterModelLoader"
+            },
+            "widgets_values": [
+                "ip-adapter-full-face_sd15.safetensors"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 240,
+            "type": "ControlNetApplyAdvanced",
+            "pos": [
+                922,
+                805
+            ],
+            "size": {
+                "0": 230,
+                "1": 170
+            },
+            "flags": {},
+            "order": 23,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "link": 1203
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "link": 1128
+                },
+                {
+                    "name": "control_net",
+                    "type": "CONTROL_NET",
+                    "link": 1311
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 1119
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "positive",
+                    "type": "CONDITIONING",
+                    "links": [
+                        1300,
+                        1305,
+                        1307,
+                        1310
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                },
+                {
+                    "name": "negative",
+                    "type": "CONDITIONING",
+                    "links": [
+                        1301,
+                        1306,
+                        1308,
+                        1309
+                    ],
+                    "slot_index": 1,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "ControlNetApplyAdvanced"
+            },
+            "widgets_values": [
+                1,
+                0,
+                1
+            ],
+            "color": "#332922",
+            "bgcolor": "#593930"
+        },
+        {
+            "id": 263,
+            "type": "NNLatentUpscale",
+            "pos": [
+                1338,
+                824
+            ],
+            "size": {
+                "0": 210,
+                "1": 82
+            },
+            "flags": {},
+            "order": 27,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "latent",
+                    "type": "LATENT",
+                    "link": 1253
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "LATENT",
+                    "type": "LATENT",
+                    "links": [
+                        1213
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "NNLatentUpscale"
+            },
+            "widgets_values": [
+                "SD 1.x",
+                1.5
+            ],
+            "color": "#a914b5",
+            "bgcolor": "#9500a1"
+        },
+        {
+            "id": 303,
+            "type": "IPAdapterAdvanced",
+            "pos": [
+                812,
+                111
+            ],
+            "size": {
+                "0": 315,
+                "1": 278
+            },
+            "flags": {},
+            "order": 18,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "model",
+                    "type": "MODEL",
+                    "link": 1312
+                },
+                {
+                    "name": "ipadapter",
+                    "type": "IPADAPTER",
+                    "link": 1299
+                },
+                {
+                    "name": "image",
+                    "type": "IMAGE",
+                    "link": 1297
+                },
+                {
+                    "name": "image_negative",
+                    "type": "IMAGE",
+                    "link": null
+                },
+                {
+                    "name": "attn_mask",
+                    "type": "MASK",
+                    "link": null
+                },
+                {
+                    "name": "clip_vision",
+                    "type": "CLIP_VISION",
+                    "link": 1298
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "MODEL",
+                    "type": "MODEL",
+                    "links": [
+                        1296
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "IPAdapterAdvanced"
+            },
+            "widgets_values": [
+                1,
+                "linear",
+                "concat",
+                0,
+                1,
+                "V only"
+            ],
+            "color": "#332922",
+            "bgcolor": "#593930"
+        },
+        {
+            "id": 257,
+            "type": "CLIPVisionLoader",
+            "pos": [
+                310,
+                200
+            ],
+            "size": {
+                "0": 428.48858642578125,
+                "1": 58
+            },
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "CLIP_VISION",
+                    "type": "CLIP_VISION",
+                    "links": [
+                        1298
+                    ],
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPVisionLoader"
+            },
+            "widgets_values": [
+                "ip_adapter_sd15/model.safetensors"
+            ],
+            "color": "#323",
+            "bgcolor": "#535"
+        },
+        {
+            "id": 161,
+            "type": "LoadImage",
+            "pos": [
+                0,
+                340
+            ],
+            "size": {
+                "0": 368.36517333984375,
+                "1": 366.5357971191406
+            },
+            "flags": {
+                "pinned": false
+            },
+            "order": 9,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        1209
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null,
+                    "slot_index": 1,
+                    "shape": 3
+                }
+            ],
+            "title": "Load IPAdapter Image (Face)",
+            "properties": {
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "image.webp",
+                "image"
+            ],
+            "color": "#628eb2",
+            "bgcolor": "#4e7a9e"
+        },
+        {
+            "id": 155,
+            "type": "LoadImage",
+            "pos": [
+                0,
+                810
+            ],
+            "size": {
+                "0": 364.2013854980469,
+                "1": 353.6595764160156
+            },
+            "flags": {
+                "pinned": false
+            },
+            "order": 10,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "IMAGE",
+                    "type": "IMAGE",
+                    "links": [
+                        959
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                },
+                {
+                    "name": "MASK",
+                    "type": "MASK",
+                    "links": null,
+                    "shape": 3
+                }
+            ],
+            "title": "Load ControlNet Image (Pose)",
+            "properties": {
+                "Node name for S&R": "LoadImage"
+            },
+            "widgets_values": [
+                "1_img.png",
+                "image"
+            ],
+            "color": "#628eb2",
+            "bgcolor": "#4e7a9e"
+        },
+        {
+            "id": 8,
+            "type": "VAELoader",
+            "pos": [
+                24,
+                -205
+            ],
+            "size": {
+                "0": 400,
+                "1": 60
+            },
+            "flags": {
+                "collapsed": false,
+                "pinned": false
+            },
+            "order": 11,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "VAE",
+                    "type": "VAE",
+                    "links": [
+                        1313,
+                        1316
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "VAELoader"
+            },
+            "widgets_values": [
+                "vae-ft-mse-840000-ema-pruned.safetensors"
+            ],
+            "color": "#323",
+            "bgcolor": "#535",
+            "shape": 4
+        },
+        {
+            "id": 156,
+            "type": "ControlNetLoader",
+            "pos": [
+                21,
+                -100
+            ],
+            "size": {
+                "0": 636.7579956054688,
+                "1": 58
+            },
+            "flags": {
+                "pinned": false
+            },
+            "order": 12,
+            "mode": 0,
+            "outputs": [
+                {
+                    "name": "CONTROL_NET",
+                    "type": "CONTROL_NET",
+                    "links": [
+                        1311
+                    ],
+                    "slot_index": 0,
+                    "shape": 3
+                }
+            ],
+            "title": "Load ControlNet (SD 1.5 OpenPose)",
+            "properties": {
+                "Node name for S&R": "ControlNetLoader"
+            },
+            "widgets_values": [
+                "control_v11p_sd15_openpose_fp16.safetensors"
+            ],
+            "color": "#323",
+            "bgcolor": "#535",
+            "shape": 4
         }
     ],
     "links": [
@@ -3137,6 +3139,22 @@
             270,
             3,
             "CLIP"
+        ],
+        [
+            1318,
+            16,
+            1,
+            30,
+            0,
+            "CLIP"
+        ],
+        [
+            1319,
+            16,
+            1,
+            18,
+            0,
+            "CLIP"
         ]
     ],
     "groups": [
@@ -3176,7 +3194,7 @@
         {
             "title": "Prompt and Pose",
             "bounding": [
-                -2,
+                0,
                 730,
                 1321,
                 840
@@ -3210,10 +3228,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.1978446689001351,
+            "scale": 0.35049389948139237,
             "offset": [
-                969.566237219641,
-                955.7631946638757
+                178.56712597038435,
+                353.5500304746822
             ]
         }
     },
