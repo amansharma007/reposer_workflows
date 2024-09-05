@@ -7,7 +7,7 @@ workflows:
   - id: oivp5xq3b4n
     name: reposer_workflow_api.json
     file: my_workflows/reposer_workflow_api.json
-    version: 1
+    version: 2
     description: ''
     inputs: []
     outputs: []
@@ -60,7 +60,7 @@ normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
     file: my_workflows/reposer_workflow.json
-    version: 1
+    version: 2
   - id: iq0q6fx3icr
     name: test.json
     file: anime/test.json
