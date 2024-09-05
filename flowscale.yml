@@ -28,6 +28,14 @@ workflows:
     inputs: []
     outputs: []
     skip_preprocess: true
+  - id: 308lbbets8g
+    name: test_api.json
+    file: anime/test_api.json
+    version: 0
+    description: ''
+    inputs: []
+    outputs: []
+    skip_preprocess: true
 normal_workflows:
   - id: b1viub33ejm
     name: photo_reimaging.json
@@ -37,3 +45,7 @@ normal_workflows:
     name: reposer_workflow.json
     file: my_workflows/reposer_workflow.json
     version: 1
+  - id: iq0q6fx3icr
+    name: test.json
+    file: anime/test.json
+    version: 0
