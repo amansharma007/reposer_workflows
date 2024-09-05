@@ -1,4 +1,4 @@
-version: 0
+version: 1
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -33,8 +33,24 @@ workflows:
     file: anime/test_api.json
     version: 0
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 9.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_66145
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+      - path: 6.inputs.text
+        label: Input Prompt
+        parameter_name: text_49841
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
 normal_workflows:
   - id: b1viub33ejm
