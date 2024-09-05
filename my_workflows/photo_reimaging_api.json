@@ -34,7 +34,7 @@
     },
     "6": {
         "inputs": {
-            "text": "boy in white shirt, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed face，detailed skin,depth of field,",
+            "text": "boy in white shirt, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed face，detailed skin,depth of field, adsfg",
             "clip": [
                 "4",
                 1
