@@ -658,44 +658,6 @@
             ]
         },
         {
-            "id": 6,
-            "type": "CLIPTextEncode",
-            "pos": [
-                370,
-                38
-            ],
-            "size": {
-                "0": 422.84503173828125,
-                "1": 164.31304931640625
-            },
-            "flags": {},
-            "order": 10,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 3
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        59
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncode"
-            },
-            "widgets_values": [
-                "boy in white shirt, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed face，detailed skin,depth of field,"
-            ]
-        },
-        {
             "id": 3,
             "type": "KSampler",
             "pos": [
@@ -1044,6 +1006,44 @@
                 "0,1,2,3,4,5,6,7,8,9",
                 1
             ]
+        },
+        {
+            "id": 6,
+            "type": "CLIPTextEncode",
+            "pos": [
+                370,
+                38
+            ],
+            "size": {
+                "0": 422.84503173828125,
+                "1": 164.31304931640625
+            },
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        59
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "boy in white shirt, masterpiece,best quality,(photorealistic:1.1),8k raw photo,a,detailed face，detailed skin,depth of field, adsfg"
+            ]
         }
     ],
     "links": [
@@ -1316,10 +1316,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.5131581182307069,
+            "scale": 0.9090909090909098,
             "offset": [
-                412.38151432641047,
-                292.610442438095
+                -58.760722211090226,
+                430.89185206778205
             ]
         }
     },
