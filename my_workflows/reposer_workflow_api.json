@@ -1,17 +1,23 @@
 {
     "8": {
         "inputs": {
-            "vae_name": "vae-ft-mse-840000-ema-pruned.ckpt"
+            "vae_name": "vae-ft-mse-840000-ema-pruned.safetensors"
         },
         "class_type": "VAELoader"
     },
     "16": {
-        "inputs": {},
+        "inputs": {
+            "ckpt_name": "realcartoon3d_v15.safetensors"
+        },
         "class_type": "CheckpointLoaderSimple"
     },
     "18": {
         "inputs": {
-            "text": "naked, nsfw, blurry, smooth, minimalist vector art, hand, fingers, camera, lens. bow-tie, lantern, lamp. drab, minimalism, pixel art. Gaussian noise, perlin. lowpoly."
+            "text": "naked, nsfw, blurry, smooth, minimalist vector art, hand, fingers, camera, lens. bow-tie, lantern, lamp. drab, minimalism, pixel art. Gaussian noise, perlin. lowpoly.",
+            "clip": [
+                "16",
+                1
+            ]
         },
         "class_type": "CLIPTextEncode"
     },
@@ -31,26 +37,30 @@
     },
     "30": {
         "inputs": {
-            "text": "HDR photo of a woman, 1970s style African detective, cheering. In the background is her office desk and a window looking out over the New York City skyline."
+            "text": "HDR photo of a woman, 1970s style African detective, cheering. In the background is her office desk and a window looking out over the New York City skyline.",
+            "clip": [
+                "16",
+                1
+            ]
         },
         "class_type": "CLIPTextEncode"
     },
     "155": {
         "inputs": {
-            "image": "pose_68be8a20-7006-44fd-82c3-2b9fb9c27a47.jpeg",
+            "image": "1_img.png",
             "upload": "image"
         },
         "class_type": "LoadImage"
     },
     "156": {
         "inputs": {
-            "control_net_name": "sd15/control-lora/control_lora_rank128_v11p_sd15_openpose_fp16.safetensors"
+            "control_net_name": "control_v11p_sd15_openpose_fp16.safetensors"
         },
         "class_type": "ControlNetLoader"
     },
     "161": {
         "inputs": {
-            "image": "woman_81d8d14a-c5a6-4450-9e07-2c0b63dbaabb.jpeg",
+            "image": "image.webp",
             "upload": "image"
         },
         "class_type": "LoadImage"
@@ -68,7 +78,7 @@
     },
     "176": {
         "inputs": {
-            "seed": 504913919791597,
+            "seed": 779656876261817,
             "steps": 16,
             "cfg": 5.6000000000000005,
             "sampler_name": "uni_pc",
@@ -168,7 +178,7 @@
     "253": {
         "inputs": {
             "add_noise": "enable",
-            "noise_seed": 1069931404185387,
+            "noise_seed": 504461848598100,
             "steps": 20,
             "cfg": 5.5,
             "sampler_name": "heunpp2",
@@ -302,7 +312,7 @@
             "guide_size": 1024,
             "guide_size_for": false,
             "max_size": 1024,
-            "seed": 329293744560011,
+            "seed": 415694182133224,
             "steps": 16,
             "cfg": 8.5,
             "sampler_name": "ddpm",
@@ -436,7 +446,7 @@
     },
     "297": {
         "inputs": {
-            "seed": 836315368333119,
+            "seed": 1047680254875504,
             "steps": 14,
             "cfg": 5.5,
             "sampler_name": "dpmpp_2m",
