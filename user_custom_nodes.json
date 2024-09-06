@@ -307,5 +307,77 @@
     "pip": [],
     "apt": [],
     "cached": "False"
+  },
+  {
+    "name": "x-flux-comfyui",
+    "url": "https://github.com/XLabs-AI/x-flux-comfyui",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "XLabs-AI",
+      "title": "x-flux-comfyui",
+      "reference": "https://github.com/XLabs-AI/x-flux-comfyui",
+      "files": [
+        "https://github.com/XLabs-AI/x-flux-comfyui"
+      ],
+      "install_type": "git-clone",
+      "description": "Nodes:Load Flux LoRA, Load Flux ControlNet, Apply Flux ControlNet, Xlabs Sampler"
+    },
+    "nodes": [
+      "XlabsSampler",
+      "LoadFluxControlNet",
+      "ApplyFluxControlNet"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "KJNodes for ComfyUI",
+    "url": "https://github.com/kijai/ComfyUI-KJNodes",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "kijai",
+      "title": "KJNodes for ComfyUI",
+      "id": "kjnodes",
+      "reference": "https://github.com/kijai/ComfyUI-KJNodes",
+      "files": [
+        "https://github.com/kijai/ComfyUI-KJNodes"
+      ],
+      "install_type": "git-clone",
+      "description": "Various quality of life -nodes for ComfyUI, mostly just visual stuff to improve usability."
+    },
+    "nodes": [
+      "ImageResizeKJ"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
+  },
+  {
+    "name": "ComfyUI Easy Use",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use",
+    "path": "custom_nodes",
+    "fetch_type": "git-clone",
+    "details": {
+      "author": "yolain",
+      "title": "ComfyUI Easy Use",
+      "reference": "https://github.com/yolain/ComfyUI-Easy-Use",
+      "files": [
+        "https://github.com/yolain/ComfyUI-Easy-Use"
+      ],
+      "install_type": "git-clone",
+      "description": "To enhance the usability of ComfyUI, optimizations and integrations have been implemented for several commonly used nodes."
+    },
+    "nodes": [
+      "easy imageSize"
+    ],
+    "apt": [],
+    "pip": [],
+    "preemptions": [],
+    "cached": "False"
   }
 ]
