@@ -1,4 +1,4 @@
-version: 1
+version: 2
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -9,8 +9,38 @@ workflows:
     file: my_workflows/reposer_workflow_api.json
     version: 3
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 227.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_69262
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+      - path: 30.inputs.text
+        label: Positive Prompt
+        parameter_name: text_25683
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+      - path: 155.inputs.image
+        label: Pose
+        parameter_name: image_37237
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+      - path: 161.inputs.image
+        label: face
+        parameter_name: image_20068
+        type: string
+        demo_type: image
+        category: input
+        randomize: false
+    outputs:
+      - label: Output Image
+        demo_type: image
     skip_preprocess: true
   - id: m1vr24b411o
     name: photo_reimaging.json
