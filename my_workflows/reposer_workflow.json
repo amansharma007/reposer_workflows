@@ -1165,10 +1165,10 @@
                 590,
                 797
             ],
-            "size": [
-                316.15297561587,
-                222
-            ],
+            "size": {
+                "0": 316.1529846191406,
+                "1": 222
+            },
             "flags": {},
             "order": 20,
             "mode": 0,
@@ -2032,6 +2032,34 @@
             "bgcolor": "#335"
         },
         {
+            "id": 277,
+            "type": "SaveImage",
+            "pos": [
+                2928,
+                1181
+            ],
+            "size": {
+                "0": 800,
+                "1": 570
+            },
+            "flags": {},
+            "order": 42,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "images",
+                    "type": "IMAGE",
+                    "link": 1228
+                }
+            ],
+            "properties": {},
+            "widgets_values": [
+                "Reposer_S2_Facefix"
+            ],
+            "color": "#222",
+            "bgcolor": "#000"
+        },
+        {
             "id": 30,
             "type": "CLIPTextEncode",
             "pos": [
@@ -2072,38 +2100,10 @@
                 "Node name for S&R": "CLIPTextEncode"
             },
             "widgets_values": [
-                "photo of a man posing in a street styled dress standing in the middle of a road"
+                "photo of a man posing in a street styled dress standing in the middle of a road, golden hour"
             ],
             "color": "#232",
             "bgcolor": "#353"
-        },
-        {
-            "id": 277,
-            "type": "SaveImage",
-            "pos": [
-                2928,
-                1181
-            ],
-            "size": {
-                "0": 800,
-                "1": 570
-            },
-            "flags": {},
-            "order": 42,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "images",
-                    "type": "IMAGE",
-                    "link": 1228
-                }
-            ],
-            "properties": {},
-            "widgets_values": [
-                "Reposer_S2_Facefix"
-            ],
-            "color": "#222",
-            "bgcolor": "#000"
         }
     ],
     "links": [
@@ -3299,10 +3299,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.35049389948139253,
+            "scale": 1,
             "offset": [
-                553.7073270960791,
-                463.27883238703004
+                202.50047582352113,
+                -593.9957048798574
             ]
         }
     },
