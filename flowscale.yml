@@ -63,6 +63,12 @@ workflows:
     outputs:
       - label: Output
         demo_type: image
+  - id: 6g8t9c91f83
+    name: lkjlkjljlk_api.json
+    description: ''
+    file: my_workflows/lkjlkjljlk_api.json
+    skip_preprocess: true
+    version: 0
 normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
