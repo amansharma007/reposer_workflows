@@ -42,10 +42,6 @@ workflows:
       - label: Output Image
         demo_type: image
     skip_preprocess: true
-  - id: m1vr24b411o
-    name: photo_reimaging.json
-    description: ''
-    file: my_workflows/photo_reimaging.json
   - id: 69padqzgfrd
     name: reposer_workflow.json
     description: ''
@@ -59,10 +55,6 @@ workflows:
     outputs: []
     skip_preprocess: true
 normal_workflows:
-  - id: b1viub33ejm
-    name: photo_reimaging.json
-    file: my_workflows/photo_reimaging.json
-    version: 2
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
     file: my_workflows/reposer_workflow.json
