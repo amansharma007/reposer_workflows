@@ -107,3 +107,7 @@ normal_workflows:
     name: asdflklklklk.json
     file: my_workflows/asdflklklklk.json
     version: 0
+  - id: 31kq9tb600d
+    name: lklklklk.json
+    file: my_workflows/lklklklk.json
+    version: 0
