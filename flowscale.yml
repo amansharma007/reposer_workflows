@@ -42,10 +42,6 @@ workflows:
       - label: Output Image
         demo_type: image
     skip_preprocess: true
-  - id: 69padqzgfrd
-    name: reposer_workflow.json
-    description: ''
-    file: my_workflows/reposer_workflow.json
 normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
