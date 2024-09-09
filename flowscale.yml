@@ -123,7 +123,3 @@ normal_workflows:
     name: lkjaksdfjlasdf.json
     file: my_workflows/lkjaksdfjlasdf.json
     version: 0
-  - id: 28yztlr672k
-    name: nmmnmnmnmn.json
-    file: my_workflows/nmmnmnmnmn.json
-    version: 0
