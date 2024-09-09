@@ -51,3 +51,7 @@ normal_workflows:
     name: reposer_workflow.json
     file: my_workflows/reposer_workflow.json
     version: 3
+  - id: 2ucrwdqf1qo
+    name: kjadfjkhakjsdh.json
+    file: my_workflows/kjadfjkhakjsdh.json
+    version: 0
