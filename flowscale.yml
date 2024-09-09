@@ -71,15 +71,3 @@ normal_workflows:
     name: flux_workflow.json
     file: my_workflows/flux_workflow.json
     version: 0
-  - id: 7hfwhingsq9
-    name: reposer_same_2.json
-    file: my_workflows/reposer_same_2.json
-    version: 0
-  - id: vn34wn6ms4f
-    name: reposer_3.json
-    file: my_workflows/reposer_3.json
-    version: 0
-  - id: lpfq45kciz
-    name: reposer_3_times.json
-    file: my_workflows/reposer_3_times.json
-    version: 0
