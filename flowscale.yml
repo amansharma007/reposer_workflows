@@ -83,3 +83,7 @@ normal_workflows:
     name: reposer111.json
     file: my_workflows/reposer111.json
     version: 0
+  - id: 8jb8kmute25
+    name: t4str.json
+    file: my_workflows/t4str.json
+    version: 0
