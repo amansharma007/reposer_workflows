@@ -46,14 +46,6 @@ workflows:
     name: reposer_workflow.json
     description: ''
     file: my_workflows/reposer_workflow.json
-  - id: xfia5610wyc
-    name: photo_reimaging_api.json
-    file: my_workflows/photo_reimaging_api.json
-    version: 2
-    description: ''
-    inputs: []
-    outputs: []
-    skip_preprocess: true
 normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
