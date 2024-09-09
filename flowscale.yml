@@ -75,3 +75,7 @@ normal_workflows:
     name: reposer_2.json
     file: my_workflows/reposer_2.json
     version: 0
+  - id: d5wm2bc1w1j
+    name: reposer_test.json
+    file: my_workflows/reposer_test.json
+    version: 0
