@@ -381,30 +381,6 @@
     "cached": "False"
   },
   {
-    "name": "stability-ComfyUI-nodes",
-    "url": "https://github.com/Stability-AI/stability-ComfyUI-nodes",
-    "path": "custom_nodes",
-    "fetch_type": "git-clone",
-    "details": {
-      "author": "Stability-AI",
-      "title": "stability-ComfyUI-nodes",
-      "id": "sai-nodes",
-      "reference": "https://github.com/Stability-AI/stability-ComfyUI-nodes",
-      "files": [
-        "https://github.com/Stability-AI/stability-ComfyUI-nodes"
-      ],
-      "install_type": "git-clone",
-      "description": "Nodes: ColorBlend, ControlLoraSave, GetImageSize. NOTE: Control-LoRA recolor example uses these nodes."
-    },
-    "nodes": [
-      "GetImageSize"
-    ],
-    "apt": [],
-    "pip": [],
-    "preemptions": [],
-    "cached": "False"
-  },
-  {
     "name": "ComfyUI-tbox",
     "url": "https://github.com/ai-shizuka/ComfyUI-tbox",
     "path": "custom_nodes",
