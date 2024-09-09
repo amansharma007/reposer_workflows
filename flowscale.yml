@@ -87,3 +87,7 @@ normal_workflows:
     name: t4str.json
     file: my_workflows/t4str.json
     version: 0
+  - id: u6e6v829vxk
+    name: asdf.json
+    file: my_workflows/asdf.json
+    version: 0
