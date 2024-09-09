@@ -95,3 +95,7 @@ normal_workflows:
     name: aasd.json
     file: my_workflows/aasd.json
     version: 0
+  - id: so3vhd5x4n
+    name: asdfasdfasdf.json
+    file: my_workflows/asdfasdfasdf.json
+    version: 0
