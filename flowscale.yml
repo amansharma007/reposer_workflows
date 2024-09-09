@@ -131,3 +131,7 @@ normal_workflows:
     name: kkkkkk.json
     file: my_workflows/kkkkkk.json
     version: 0
+  - id: fzgcbi94qcu
+    name: hhhh.json
+    file: my_workflows/hhhh.json
+    version: 0
