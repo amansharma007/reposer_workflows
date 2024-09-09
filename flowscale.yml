@@ -91,3 +91,7 @@ normal_workflows:
     name: asdf.json
     file: my_workflows/asdf.json
     version: 0
+  - id: 16f91blf14l
+    name: aasd.json
+    file: my_workflows/aasd.json
+    version: 0
