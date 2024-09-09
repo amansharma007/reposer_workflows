@@ -119,3 +119,7 @@ normal_workflows:
     name: hgghhghg.json
     file: my_workflows/hgghhghg.json
     version: 0
+  - id: py32pu2da4c
+    name: jlaldfkljasdf.json
+    file: my_workflows/jlaldfkljasdf.json
+    version: 0
