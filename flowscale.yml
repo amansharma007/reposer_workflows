@@ -1,4 +1,4 @@
-version: 3
+version: 4
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -69,6 +69,17 @@ workflows:
     file: my_workflows/lkjlkjljlk_api.json
     skip_preprocess: true
     version: 0
+    inputs:
+      - path: 45.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_48937
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+    outputs:
+      - label: Output
+        demo_type: image
 normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
