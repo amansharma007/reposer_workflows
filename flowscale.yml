@@ -49,7 +49,7 @@ workflows:
   - id: 8jlq2eczi9k
     name: new_v_1_api.json
     file: my_workflows/new_v_1_api.json
-    version: 0
+    version: 1
     description: ''
     inputs: []
     outputs: []
@@ -62,4 +62,4 @@ normal_workflows:
   - id: 7vrtz0g130j
     name: new_v_1.json
     file: my_workflows/new_v_1.json
-    version: 0
+    version: 1
