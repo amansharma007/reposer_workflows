@@ -179,10 +179,10 @@
                 1451,
                 189
             ],
-            "size": [
-                210,
-                270
-            ],
+            "size": {
+                "0": 210,
+                "1": 270
+            },
             "flags": {},
             "order": 6,
             "mode": 0,
@@ -196,44 +196,6 @@
             "properties": {},
             "widgets_values": [
                 "ComfyUI"
-            ]
-        },
-        {
-            "id": 6,
-            "type": "CLIPTextEncode",
-            "pos": [
-                415,
-                186
-            ],
-            "size": {
-                "0": 422.84503173828125,
-                "1": 164.31304931640625
-            },
-            "flags": {},
-            "order": 2,
-            "mode": 0,
-            "inputs": [
-                {
-                    "name": "clip",
-                    "type": "CLIP",
-                    "link": 3
-                }
-            ],
-            "outputs": [
-                {
-                    "name": "CONDITIONING",
-                    "type": "CONDITIONING",
-                    "links": [
-                        4
-                    ],
-                    "slot_index": 0
-                }
-            ],
-            "properties": {
-                "Node name for S&R": "CLIPTextEncode"
-            },
-            "widgets_values": [
-                "beautiful scenery nature glass bottle landscape, golden hour, purple galaxy bottle,"
             ]
         },
         {
@@ -282,6 +244,44 @@
             },
             "widgets_values": [
                 "epicrealism_naturalSinRC1VAE.safetensors"
+            ]
+        },
+        {
+            "id": 6,
+            "type": "CLIPTextEncode",
+            "pos": [
+                415,
+                186
+            ],
+            "size": {
+                "0": 422.84503173828125,
+                "1": 164.31304931640625
+            },
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+                {
+                    "name": "clip",
+                    "type": "CLIP",
+                    "link": 3
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "CONDITIONING",
+                    "type": "CONDITIONING",
+                    "links": [
+                        4
+                    ],
+                    "slot_index": 0
+                }
+            ],
+            "properties": {
+                "Node name for S&R": "CLIPTextEncode"
+            },
+            "widgets_values": [
+                "beautiful scenery nature glass bottle landscape, golden hour, purple galaxy bottle, new york"
             ]
         }
     ],
@@ -363,10 +363,10 @@
     "config": {},
     "extra": {
         "ds": {
-            "scale": 0.4665073802097334,
+            "scale": 1.1,
             "offset": [
-                79.56515726545445,
-                734.3745874772728
+                86.34380316636349,
+                -36.59186741909073
             ]
         }
     },
