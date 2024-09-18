@@ -1,4 +1,4 @@
-version: 7
+version: 8
 models: models.json
 custom_nodes: custom_nodes.json
 user_models: user_models.json
@@ -51,8 +51,24 @@ workflows:
     file: my_workflows/new_v_1_api.json
     version: 1
     description: ''
-    inputs: []
-    outputs: []
+    inputs:
+      - path: 9.inputs.filename_prefix
+        label: filename_prefix
+        parameter_name: filename_prefix_32762
+        type: string
+        demo_type: text
+        category: output
+        randomize: true
+      - path: 6.inputs.text
+        label: positive prompt
+        parameter_name: text_72742
+        type: string
+        demo_type: text
+        category: input
+        randomize: false
+    outputs:
+      - label: output
+        demo_type: image
     skip_preprocess: true
 normal_workflows:
   - id: 4fgj53kyqmy
