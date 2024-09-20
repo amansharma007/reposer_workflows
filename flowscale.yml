@@ -70,6 +70,10 @@ workflows:
       - label: output
         demo_type: image
     skip_preprocess: true
+  - id: 169b7zvk3jc
+    name: new_v_1.json
+    description: ''
+    file: my_workflows/new_v_1.json
 normal_workflows:
   - id: 4fgj53kyqmy
     name: reposer_workflow.json
